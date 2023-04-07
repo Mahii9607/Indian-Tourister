@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Indian Tourister</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      .video{
+        width: 1300px;
+        height: 650px;
+      }
+    </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./Categories/Adventure.html">Adventure</a></li>
+              <li><a class="dropdown-item" href="./Categories/Heritage.html">Heritage</a></li>
+              <li><a class="dropdown-item" href="./Categories/Nature_&_Wildlife.html">Nature And Wildlife</a></li>
+              <li><a class="dropdown-item" href="./Categories/Museums.html">Museums</a></li>
+              <li><a class="dropdown-item" href="./Categories/Spiritual.html">Spiritual</a></li>
+              <li><a class="dropdown-item" href="./Categories/Food_&_Cuisine.html">Food & Cuisine</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <video preload="auto" autoplay muted loop class="ratio ratio-4x3">
+    <source src="./images/This_is_India.mp4">
+  </video>
+
+  <!-- <iframe width="1300px" height="400" src="./images/This_is_India.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="d-flex justify-content-around ">
+    <div class="card" style="width: 18rem;">
+      <img src="https://destinationdeluxe.com/wp-content/uploads/2021/06/Adventure-Activities-Destination-Deluxe.jpg" class="card-img-top" alt="..." height="220px">
+      <div class="card-body">
+        <h5 class="card-title">Adventure</h5>
+        <p class="card-text">Adventure is having the confidence to explore yourself. It's having the confidence to be brave, to not be afraid of anything.</p>
+        <a href="./Categories/Adventure.html" class="btn btn-primary mt-4">Explore More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://www.viktorianz.com/media/landing.jpg" class="card-img-top" alt="..." height="220px">
+      <div class="card-body">
+        <h5 class="card-title">Heritage</h5>
+        <p class="card-text">The traditions, qualities and culture of a country that have existed for a long time and that have great importance for the country.
+        </p>
+        <a href="./Categories/Heritage.html" class="btn btn-primary mt-4">Explore More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://en.bcdn.biz/Images/2013/9/6/7124fbb0-1526-48e4-aeb3-a0e39d7b90ac.jpg" class="card-img-top" alt="..." height="220px">
+      <div class="card-body">
+        <h5 class="card-title">Nature And Wildlife</h5>
+        <p class="card-text">Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.</p>
+        <a href="./Categories/Nature_&_Wildlife.html" class="btn btn-primary">Explore More</a>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-around" style="margin: 30px;">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2020/11/header2.jpg?fit=1300%2C731&ssl=1" class="card-img-top" alt="..." height="220px">
+      <div class="card-body">
+        <h5 class="card-title">Museums</h5>
+        <p class="card-text">A museum is a not-for-profit, permanent institution in the service of society that researches, collects, conserves, interprets and exhibits tangible and intangible heritage</p>
+        <a href="./Categories/Museums.html" class="btn btn-primary">Explore More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=" class="card-img-top" alt="..." height="220px">
+      <div class="card-body">
+        <h5 class="card-title">Spiritual</h5>
+        <p class="card-text">Spirituality can be defined generally as an individual's search for ultimate or sacred meaning, and purpose in life.</p>
+        <a href="./Categories/Spiritual.html" class="btn btn-primary mt-4">Explore More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://www.conceptyourkitchen.com/wp-content/uploads/2021/01/Prasadam-at-varr.png" class="card-img-top" alt="..." height="220px">
+      <div class="card-body">
+        <h5 class="card-title">Food & Cuisine</h5>
+        <p class="card-text">A cuisine is a specific set of cooking traditions and practices, often associated with a specific culture or region.</p>
+        <a href="./Categories/Food_&_Cuisine.html" class="btn btn-primary mt-4">Explore More</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
