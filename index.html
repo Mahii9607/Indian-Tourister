@@ -9,32 +9,47 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <style>
-      .video{
-        width: 1300px;
-        height: 650px;
-      }
-    </style>
+  <style>
+    video {
+      margin-top: 20px;
+      width: 1500px;
+      height: 550px;
+    }
+
+    #show_more {
+      display: none;
+    }
+
+    .font {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .popular{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="index.html"> <img src="./images/logo.it (3).png" width="150px" /> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <li class="nav-item ms-5">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
+            <a class="nav-link dropdown-toggle ps-5" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              DESTINATIONS
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="./Categories/Adventure.html">Adventure</a></li>
@@ -45,8 +60,9 @@
               <li><a class="dropdown-item" href="./Categories/Food_&_Cuisine.html">Food & Cuisine</a></li>
             </ul>
           </li>
+          <li class="nav-link active ps-5"> About us</li>
         </ul>
-        <form class="d-flex">
+        <form class="d-flex"> 
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
@@ -54,11 +70,34 @@
     </div>
   </nav>
 
-  <video preload="auto" autoplay muted loop class="ratio ratio-4x3">
+  <video preload="auto" autoplay muted loop class="">
     <source src="./images/This_is_India.mp4">
   </video>
 
-  <!-- <iframe width="1300px" height="400" src="./images/This_is_India.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+  <p class="mt-5 fs-5 p-4 font">
+    One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich heritage
+    and myriad attractions, the country is among the most popular tourist destinations in the world. It covers an area
+    of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south.
+    As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains
+    and the sea, which give the country a distinct geographical entity.
+
+    <span id="show_more">
+      Fringed by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into
+      the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As you travel the expanse
+      of
+      the country, you are greeted by diverse nuances of cuisines, faiths, arts, crafts, music, nature, lands, tribes,
+      history and adventure sports. India has a mesmeric conflation of the old and the new. As the bustling old bazaars
+      rub shoulders with swanky shopping malls, and majestic monuments accompany luxurious heritage hotels, the
+      quintessential traveller can get the best of both worlds. Head to the mountains, enjoy a beach retreat or cruise
+      through the golden Thar, India has options galore for all.
+    </span>
+  </p>
+
+  <button id="showMoreBtn" class="btn btn-link d-block ms-auto me-auto" onclick="showMore()"> show More </button>
+
+  <div class="popular">
+    <h2> Popular In India </h2>
+  </div>
 
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -84,10 +123,12 @@
 
   <div class="d-flex justify-content-around ">
     <div class="card" style="width: 18rem;">
-      <img src="https://destinationdeluxe.com/wp-content/uploads/2021/06/Adventure-Activities-Destination-Deluxe.jpg" class="card-img-top" alt="..." height="220px">
+      <img src="https://llib.b-cdn.net/wp-content/uploads/2018/01/mountainerring-in-ladakh.jpg"
+        class="card-img-top" alt="..." height="220px">
       <div class="card-body">
         <h5 class="card-title">Adventure</h5>
-        <p class="card-text">Adventure is having the confidence to explore yourself. It's having the confidence to be brave, to not be afraid of anything.</p>
+        <p class="card-text">Adventure is having the confidence to explore yourself. It's having the confidence to be
+          brave, to not be afraid of anything.</p>
         <a href="./Categories/Adventure.html" class="btn btn-primary mt-4">Explore More</a>
       </div>
     </div>
@@ -95,46 +136,75 @@
       <img src="https://www.viktorianz.com/media/landing.jpg" class="card-img-top" alt="..." height="220px">
       <div class="card-body">
         <h5 class="card-title">Heritage</h5>
-        <p class="card-text">The traditions, qualities and culture of a country that have existed for a long time and that have great importance for the country.
+        <p class="card-text">The traditions, qualities and culture of a country that have existed for a long time and
+          that have great importance for the country.
         </p>
         <a href="./Categories/Heritage.html" class="btn btn-primary mt-4">Explore More</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="https://en.bcdn.biz/Images/2013/9/6/7124fbb0-1526-48e4-aeb3-a0e39d7b90ac.jpg" class="card-img-top" alt="..." height="220px">
+      <img src="https://en.bcdn.biz/Images/2013/9/6/7124fbb0-1526-48e4-aeb3-a0e39d7b90ac.jpg" class="card-img-top"
+        alt="..." height="220px">
       <div class="card-body">
         <h5 class="card-title">Nature And Wildlife</h5>
-        <p class="card-text">Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.</p>
+        <p class="card-text">Wildlife refers to undomesticated animal species, but has come to include all organisms
+          that grow or live wild in an area without being introduced by humans.</p>
         <a href="./Categories/Nature_&_Wildlife.html" class="btn btn-primary">Explore More</a>
       </div>
     </div>
   </div>
   <div class="d-flex justify-content-around" style="margin: 30px;">
     <div class="card" style="width: 18rem;">
-      <img src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2020/11/header2.jpg?fit=1300%2C731&ssl=1" class="card-img-top" alt="..." height="220px">
+      <img src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2020/11/header2.jpg?fit=1300%2C731&ssl=1"
+        class="card-img-top" alt="..." height="220px">
       <div class="card-body">
         <h5 class="card-title">Museums</h5>
-        <p class="card-text">A museum is a not-for-profit, permanent institution in the service of society that researches, collects, conserves, interprets and exhibits tangible and intangible heritage</p>
+        <p class="card-text">A museum is a not-for-profit, permanent institution in the service of society that
+          researches, collects, conserves, interprets and exhibits tangible and intangible heritage</p>
         <a href="./Categories/Museums.html" class="btn btn-primary">Explore More</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=" class="card-img-top" alt="..." height="220px">
+      <img
+        src="https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U="
+        class="card-img-top" alt="..." height="220px">
       <div class="card-body">
         <h5 class="card-title">Spiritual</h5>
-        <p class="card-text">Spirituality can be defined generally as an individual's search for ultimate or sacred meaning, and purpose in life.</p>
+        <p class="card-text">Spirituality can be defined generally as an individual's search for ultimate or sacred
+          meaning, and purpose in life.</p>
         <a href="./Categories/Spiritual.html" class="btn btn-primary mt-4">Explore More</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
-      <img src="https://www.conceptyourkitchen.com/wp-content/uploads/2021/01/Prasadam-at-varr.png" class="card-img-top" alt="..." height="220px">
+      <img src="https://www.conceptyourkitchen.com/wp-content/uploads/2021/01/Prasadam-at-varr.png" class="card-img-top"
+        alt="..." height="220px">
       <div class="card-body">
         <h5 class="card-title">Food & Cuisine</h5>
-        <p class="card-text">A cuisine is a specific set of cooking traditions and practices, often associated with a specific culture or region.</p>
+        <p class="card-text">A cuisine is a specific set of cooking traditions and practices, often associated with a
+          specific culture or region.</p>
         <a href="./Categories/Food_&_Cuisine.html" class="btn btn-primary mt-4">Explore More</a>
       </div>
     </div>
   </div>
+
+
+  <script>
+    function showMore() {
+      const moreText = document.getElementById("show_more");
+      const btnText = document.getElementById("showMoreBtn");
+
+      if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        btnText.innerHTML = "Show Less";
+      }
+      else {
+        moreText.style.display = "none";
+        btnText.innerHTML = "Show More";
+      }
+    }
+
+
+  </script>
 </body>
 
 </html>
