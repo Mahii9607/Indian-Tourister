@@ -15,20 +15,19 @@
       width: 1500px;
       height: 550px;
     }
-
     #show_more {
       display: none;
     }
-
     .font {
       font-family: 'Times New Roman', Times, serif;
     }
-
     .popular{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 650px;
     }
+    .imgSlider{
+     
+    }
+
   </style>
 </head>
 
@@ -95,20 +94,23 @@
 
   <button id="showMoreBtn" class="btn btn-link d-block ms-auto me-auto" onclick="showMore()"> show More </button>
 
-  <div class="popular">
+  <div class="popular fs-1">
     <h2> Popular In India </h2>
   </div>
+  <p class="d-block ms-auto me-auto fs-5">
+    India is a home to the finest architectural heritage, serene ghats, spectacular landscapes and largest tiger reserve
+  </p>
 
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide imgSlider" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="..." class="d-block w-100" alt="...">
+        <img src="https://i.ytimg.com/vi/D411VmYUuoE/maxresdefault.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <img src="https://www.ladakh-tourism.net/wp-content/uploads/2021/07/Ladakh-Tour-1.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <img src="https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -121,7 +123,9 @@
     </button>
   </div>
 
-  <div class="d-flex justify-content-around ">
+  
+
+  <div class="d-flex justify-content-around m-5">
     <div class="card" style="width: 18rem;">
       <img src="https://llib.b-cdn.net/wp-content/uploads/2018/01/mountainerring-in-ladakh.jpg"
         class="card-img-top" alt="..." height="220px">
